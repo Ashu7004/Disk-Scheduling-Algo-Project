@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Something</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="main">
+        <!-- <div class="heading">DISC SCHEDULING ALGORITHMS</div> -->
+        <div class="heading">
+          <img
+            src="Music disc logo for a recording studio. Vinyl record poster. Cover for the music album (1).png"
+            alt="Logo"
+          />
+          <div>Disk Scheduling Algorithm</div>
+        </div>
+
+        <div class="list">
+          <ul>
+            <li><a href="#defination">Defination</a></li>
+            <li><a href="#terminologies">Terminologies</a></li>
+            <li><a href="#type">Types</a></li>
+            <li><a href="./fcfs.html">Simulation</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="define">
+      <div class="box-set">
+        <div class="box box1">
+          <div class="box1" id="defination">
+            <img src="img1.png" alt="DISC SCHEDULING ALGORITHMS" />
+            <h2>What is Disk Scheduling Algorithm?</h2>
+            <p>
+              'Disk Scheduling Algorithm' is an algorithm that keeps and manages
+              input and output requests arriving for the disk in a system. As we
+              know, for executing any process memory is required. And when it
+              comes to accessing things from a hard disk, the process becomes
+              very slow as a hard disk is the slowest part of our computer.
+              There are various methods by which the process can be scheduled
+              and can be done efficiently.
+            </p>
+          </div>
+        </div>
+
+        <div class="box box2">
+          <div class="box2" id="terminologies">
+            <div class="text">
+              <h2>Some important terminologies:</h2>
+              <img src="images.png" alt="" />
+            </div>
+            <div class="terms">
+              <b id="bold">Seek Time</b>
+              -
+              <span>
+                Seek time is the time taken in locating the disk arm to a
+                specified track where the read/write request will be
+                satisfied.</span
+              ><br />
+              <b id="bold">Rotational Latency</b>
+              -
+              <span>
+                It is the time taken by the desired sector to rotate itself to
+                the position from where it can access the R/W heads.</span
+              ><br />
+              <b id="bold">Transfer Time</b>
+              - <span> It is the time taken to transfer the data.</span><br />
+              <b id="bold"> Disk Access Time</b>
+              -
+              <span>
+                Disk access time is given as, <br />Disk Access Time =
+                Rotational Latency + Seek Time + Transfer Time</span
+              ><br />
+              <b id="bold">Disk Response Time:</b>
+              -
+              <span>
+                It is the average of time spent by each request waiting for the
+                IO operation.</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="box box3" id="type">
+          <h1>Types of Disks</h1>
+          <div class="mini mbox1">
+            <a href="./fcfs.html">
+              <h3>FCFS</h3>
+              FCFS is the simplest disk scheduling algorithm. As the name
+              suggests, this algorithm entertains requests in the order they
+              arrive in the disk queue. The algorithm looks very fair and there
+              is no starvation (all requests are serviced sequentially) but
+              generally, it does not provide the fastest service.</a
+            >
+          </div>
+
+          <div class="mini mbox2">
+            <a href="./sstf.html">
+              <h3>SSTF</h3>
+              Shortest seek time first (SSTF) algorithm selects the disk I/O
+              request which requires the least disk arm movement from its
+              current position regardless of the direction. It reduces the total
+              seek time as compared to FCFS. It allows the head to move to the
+              closest track in the service queue.</a
+            >
+          </div>
+
+          <div class="mini mbox3">
+            <a href="./scan.html">
+              <h3>SCAN</h3>
+
+              In SCAN disk scheduling algorithm, head starts from one end of the
+              disk and moves towards the other end, servicing requests in
+              between one by one and reach the other end. Then the direction of
+              the head is reversed and the process continues as head
+              continuously scan back and forth to access the disk.</a
+            >
+          </div>
+
+          <div class="mini mbox4">
+            <a href="./cscan.html">
+              <h3>C-SCAN</h3>
+              Circular SCAN (C-SCAN) scheduling algorithm is a modified version
+              of SCAN disk scheduling algorithm that deals with the inefficiency
+              of SCAN algorithm by servicing the requests more uniformly. Like
+              SCAN (Elevator Algorithm) C-SCAN moves the head from one end
+              servicing all the requests to the other end.</a
+            >
+          </div>
+
+          <div class="mini mbox5">
+            <a href="./look.html">
+              <h3>LOOK</h3>
+              The LOOK algorithm services request similarly as SCAN algorithm
+              meanwhile it also “looks” ahead as if there are more tracks that
+              are needed to be serviced in the same direction. If there are no
+              pending requests in the moving direction the head reverses the
+              direction and start servicing requests in the opposite
+              direction.</a
+            >
+          </div>
+
+          <div class="mini mbox6">
+            <a href="./clook.html">
+              <h3>CIRCULAR LOOK</h3>
+              In this algorithm, the head services requests only in one
+              direction until all the requests in this direction are not
+              serviced and then jumps back to the farthest request on the other
+              direction and service the remaining requests which gives a better
+              uniform servicing as well as avoids wasting seek time for going
+              till the end of the disk.</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

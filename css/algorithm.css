@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --c1:#03045e;
+    --c2:#023e8a;
+    --c3:#0077b6;
+    --c4:#0096c7;
+    --c5:#00b4d8;
+    --c6:#48cae4;
+    --c7:#90e0ef;
+    --c8:#ade8f4;
+    --c9:#caf0f8;
+    font-family: 'Laila', sans-serif;
+}
+.inputContainer{
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    background:linear-gradient(135deg,var(--c9),var(--c6),var(--c7),var(--c8));
+    padding: 10px 0px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+/* From uiverse.io by @Jaareet */
+#algo{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  font-size: .8vw;
+  color: #fff;
+  background-color: rgb(28,28,30);
+  box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+  border-radius: 0.4vw;
+  border: none;
+  outline: none;
+  padding: 0.4vw;
+  max-width: 190px;
+  transition: .4s;
+}
+
+#algo:hover {
+  box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+}
+
+#algo:focus {
+  box-shadow: 0 0 0 .15vw skyblue;
+}
+#requestCyc{
+    width:15vw;
+}
+.btn{
+    background-color: #03045e;
+    color: aliceblue;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.display{
+    display: flex;
+
+}
+.queue{
+    width: 20vw;
+    background-color: #00b4d8;
+    height:67vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.disk{
+    width:70vw;
+    background-color: #90e0ef;
+    height:80vh;
+}
+.queue>div{
+    width:15vw;
+    height:50vh;
+    border:2px solid black;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0 0 1vw 1vw;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+}
+.queue>div::before{
+    /* content: "";
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    border: 2px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-bottom-right-radius: 0;
+    left: -1.14vw;
+    top: -1vw; */
+    width: 14.7vw;
+    content: "";
+    position: absolute;
+    height: 5vw;
+    top: -2.3vw;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.queue>div::after{
+    /* content: "";
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    border: 2px solid black;
+    border-bottom: none;
+    border-right: none;
+    border-bottom-left-radius: 0;
+    right: -1.14vw;
+    top: -1vw; */
+    width: 15vw;
+    content: "";
+    position: absolute;
+    height: 5vw;
+    bottom: -1.6vw;
+    border-bottom: 6px solid black;
+    border-radius: 50%;
+}
+.text{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.diskval{
+    width: 6vw;
+    display: inline-block;
+    background: aqua;
+    margin: 2px;
+    text-align: center;
+    border-radius: 1vw;
+}
+.disks{
+    width: 55vw;
+    padding: 1vw;
+}
+.numberLine{
+    height: 1vw;
+    width: 50vw;
+    background-color: #00b4d8;
+    border-bottom: 2px solid black;
+}
+canvas{
+    /* width:50vw; */
+    background-color: #caf0f8;
+}
+.test{
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background: black;
+    left: 100%;
+    transform: translate(-100%,0%);
+}
+
+.output-container{
+    display: flex;
+    width: 100%;
+    background: antiquewhite;
+    flex-wrap: wrap;
+    gap: 11px;
+    padding: 12px;
+}
+
+.output{
+    width: 7%;
+    height: 10vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.steps{
+    width: 23vw;
+    padding: 10px 15px;
+    font-size: 1em;
+}
+.seekTime{
+    margin-top: 10px;
+    border-top: 2px solid black;
+    padding: 10px 5px;
+}

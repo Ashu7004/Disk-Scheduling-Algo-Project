@@ -1,0 +1,273 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  background-color: #0d1b2a;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  /* position: fixed; */
+}
+
+.heading {
+  padding-top: 10px;
+  color: #e0e1dd;
+  margin-right: auto;
+  font-size: 20px;
+  height: 15vh;
+  display: flex;
+}
+.heading > div{
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  float: right;
+  list-style: none;
+}
+
+.list ul li {
+  display: inline-block;
+  color: #e0e1dd;
+  padding: 0px 20px;
+}
+
+.list li a {
+  transition: all 0.3s ease;
+}
+
+.list li a:hover {
+  color: #0088a9;
+}
+
+li > a {
+  padding: 9px 25px;
+  background-color: #6998ab;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #031a2c;
+  height: 35px;
+  transition: all 0.3s ease;
+  size: 5px;
+}
+li > a:hover {
+  color: #6998ab;
+  background-color: #b1d0e0;
+}
+
+li,
+a,
+button {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.define {
+  color: #e0e1dd;
+  width: 100vw;
+  /* border: solid; */
+}
+/* .define img {
+    width: 50px;
+    height: 30px;
+    color: white;
+} */
+
+.box {
+  border: 3px solid #051923;
+  width: 80vw;
+  /* height: 50vh; */
+  margin: 50px auto;
+  padding: 10px;
+  overflow: visible;
+  background-color: #1b263b;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+transition: 0.4s;}
+.box:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+  -5px -5px 30px 15px rgba(0,0,0,0.22);
+  transition: ease;
+  }
+
+.box1 {
+  height: 60vh;
+}
+.box1 img {
+  width: 250px;
+  height: 210px;
+  color: #e0e1dd;
+  float: left;
+  border: 1px solid;
+  /* margin:10px ; */
+  padding: 1px;
+  position: relative;
+  /* position: absolute; */
+  top: 25px;
+  left: 80px;
+  z-index: 1;
+  /* background-color: ; */
+}
+.box1 h2 {
+  position: relative;
+  left: 120px;
+  top: 100px;
+}
+.box1 p {
+  padding: 5px 10px;
+  text-indent: 80px;
+  /* height: 18vh; */
+  width: 55vw;
+  /* float: right; */
+  position: relative;
+  top: 180px;
+  left: 20px;
+  /* text-align: right; */
+  font-size: 1.5em;
+  background-color: #1b263b;
+}
+.text{
+  margin-left: 15vh;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box2 {
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box h2 {
+  /* float: right; */
+  border: 1px solid;
+  display: inline-block;
+  background-color: #1b263b;
+}
+.terms {
+  float: right;
+  overflow-y: scroll;
+  border-left: 3px solid;
+  padding-left: 35px;
+  width: 50%;
+  font-size: 1.5em;
+  height: 100%;
+  /* background-color: #1b263b; */
+}
+/* #bold {
+  background-color: #1b263b;
+}
+.terms span {
+  background-color: #1b263b;
+} */
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #1b263b #0d1b2a;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #0d1b2a;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #1b263b;
+    border-radius: 10px;
+    border: 3px solid #0d1b2a;
+  }
+.terms > b {
+  text-decoration: underline;
+}
+.terms > p {
+  border: none !important;
+}
+#bold {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.box p {
+  border: 1px solid;
+  display: inline-block;
+}
+.box3 h1 {
+  border: 1px solid;
+}
+.mini {
+  border: 1px solid;
+  padding: 10px 15px;
+  background-color: transparent   ;
+  font-size: 15px;
+}
+.mini a {
+  color: white;
+  font-size: 1.5em;
+  background-color: transparent   ;
+}
+.mini a h3 {
+  text-decoration: underline double;
+  padding-bottom: 10px;
+  background-color: transparent   ;
+
+}
+.box3 {
+  display: grid;
+  grid-template-areas: "heading mbox1" "mbox2 mbox1" "mbox2 mbox3" "mbox4 mbox3" "mbox4 mbox5" "mbox6 mbox5" "mbox6 auto";
+  grid-gap: 10px;
+}
+.box3 > h1 {
+  grid-area: heading;
+  font-size: 4em;
+}
+.mbox1 {
+  grid-area: mbox1;
+}
+
+
+.mini{
+  background-color: #0d1b2a ;
+}
+.mbox2 {
+  grid-area: mbox2;
+}
+.mini{
+  transition: all .5s;
+}
+.mini:hover{
+  transform: scale(1.02);
+  background-color:#e0e1dd;
+}
+.mini:hover a{
+  color: #0d1b2a;
+}
+.mbox3 {
+  grid-area: mbox3;
+  color: #0d1b2a;
+}
+.mbox4 {
+  grid-area: mbox4;
+}
+.mbox5 {
+  grid-area: mbox5;
+}
+.mbox6 {
+  grid-area: mbox6;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disk Scheduling algorithm</title>
+    <link rel="stylesheet" href="./css/algorithm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="inputContainer">
+        <div class="input">
+            <label for="algo">Algorithm</label>
+            <select name="algo" id="algo">
+                <option value="FCFS">FCFS</option>
+                <option value="SSTF">SSTF</option>
+                <option value="SCAN">SCAN</option>
+                <option value="CSCAN">C-SCAN</option>
+                <option value="LOOK" selected>LOOK</option>
+                <option value="CLOOK">C-LOOK</option>
+            </select>
+        </div>
+        <div class="input" >
+            <label for="initalCyc">Inital Cyclinder</label>
+            <input type="text" name="initalCyc" id="initalCyc" value="0" id="algo">
+        </div>
+        <div class="input">
+            <label for="requestCyc">Sequence of Cylinder</label>
+            <input type="text" name="requestCyc" id="requestCyc">
+        </div>
+        <div class="btn">
+            <span>Start</span>
+        </div>
+    </div>
+    <div class="display">
+        <div class="queue">
+            <span class="text">INPUTS</span>
+            <div>
+                <span class="diskval">10</span>
+            </div>
+        </div>
+        <div class="disks">
+            <canvas width="820" height="500" id="myCanvas">
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="heading"></div>
+                <div class="def"></div>
+            </div>
+            <div class="seekTime">
+                <div class="seekTimestep"></div>
+                <div class="answer"></div>
+            </div>
+
+        </div>.
+    </div>
+    <div class="output-container">
+        <!-- <div class="output">10</div> -->
+    </div>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
